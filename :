@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Enter the Number of Rows"
+read row
+
+echo "Enter the Number of Columns"
+read col
+
+i=0
+j=0
+while [ $i -le $row]
+	while [ $j -le $col]
+	do
+		echo "$i x $j = 'expr $i /* $j'"
+		j = 'expr $j + 1'
+	done
+	j=0
+	i = 'expr $i + 1'
+exit 0
+
+
+
